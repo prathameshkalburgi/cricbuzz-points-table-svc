@@ -1,0 +1,127 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fontawesome}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% Set geometry
+\geometry{left=0.75in, right=0.75in, top=0.5in, bottom=0.5in}
+
+% Define color
+\definecolor{customBlue}{RGB}{0, 51, 102}
+
+% Header formatting
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% Custom section title format
+\titleformat{\section}{\color{customBlue}\large\bfseries}{}{0em}{}
+\titlespacing{\section}{0pt}{4pt}{4pt}
+
+% Name and contact info formatting
+\newcommand{\contactInfo}{
+    \begin{center}
+        {\LARGE \textbf{Prathmesh Kalburgi}} \\
+        \vspace{1mm}
+        \small
+        \hspace{18mm}\faPhone \ +91-8197916519 \hspace{2mm} | \hspace{2mm} \faEnvelope \ \href{mailto:prathameshkalburgi@gmail.com}{prathameshkalburgi@gmail.com} \hspace{2mm} | \hspace{2mm} \faLinkedin \ \href{https://www.linkedin.com/in/prathmesh-kalburgi/}{linkedin.com/in/prathmesh-kalburgi} \\
+        Hyderabad, India
+    \end{center}
+    \vspace{-2mm}
+    \noindent\rule{\textwidth}{0.5pt}
+}
+
+% Begin Document
+\begin{document}
+
+% Contact Info
+\contactInfo
+
+% Professional Summary
+\section*{Professional Summary}
+Result-driven Full Stack Developer with 3.6+ years of experience in Full Stack development, cloud-native systems, and scalable microservice architectures. Skilled in front-end development with Angular, JavaScript, and specialized in Java, Spring Boot, and modern infrastructure using AWS, Docker, Kafka. Proven expertise in driving cost optimization, improving performance, and implementing event-driven architectures using Kafka, Redis. Adept at transforming legacy systems, automating deployment workflows, and building high-performance systems tailored for real-world scalability and maintainability. Familiar with foundational AI/ML concepts and tools, incuding model training, data pre-processing, and integration of ML models into backend systems
+\vspace{2\baselineskip}
+% Skills Section
+\section*{Skills}
+\begin{multicols}{2}
+    \begin{itemize}[leftmargin=0.5cm, noitemsep]
+        \item \textbf{Languages:} Java (8 \& 17)
+        \item \textbf{Frameworks:} Spring Boot, REST, Microservices
+        \item \textbf{Front-End:} Angular, JavaScript
+        \item \textbf{Databases:} MySQL, PostgreSQL, Redshift
+        \item \textbf{Caching:} Redis
+        \item \textbf{DevOps Tools:} Jenkins, Git, GitHub, Docker
+        \item \textbf{Cloud Platforms:} AWS, PCF
+        \item \textbf{Testing:} JUnit, TDD, BDD, Automated Testing
+        \item \textbf{Other:} Kafka, Query Optimization, Distributed Systems, System Design, AI/ML Basics
+    \end{itemize}
+\end{multicols}
+
+\vspace{2\baselineskip}
+% Experience Section
+\section*{Professional Experience}
+
+\subsection*{Payu Payments – Bengaluru, Karnataka}
+\textit{Full Stack Developer} \hfill \textit{Nov 2024 – Present}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+    \item Implemented features such as Convenience Fees, AMC Frequency Pricing, and Platform Fees from day one—bypassing prorated logic to meet real-time business use cases.
+    \item Optimized cloud database performance, reducing monthly costs from  \$ 4k to \$ 1k via Implementing archival policies via table partitioning, Removing unnecessary indexes, Rewriting inefficient application-level queries, Normalizing the database schema for long-term maintainability
+    \item Introduced Redis caching, improving application response time by 20\% and reducing database hits.
+    \item Replaced CDC with Kafka-based event streaming, leading to a 20\% cost reduction of Maxwell and Logstash servers.
+    \item Delivered robust, scalable microservices integrated with internal payment workflows for enhanced performance
+\end{itemize}
+
+\subsection*{FedEx ACC – Hyderabad, Telangana}
+\textit{Full Stack Developer} \hfill \textit{Nov 2023 – Nov 2024}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+    \item Built high-volume, low-latency microservices for demand planning, improving system performance and reliability by 25\%.
+    \item Developed interactive front-end modules using Angular for the FedEx Ground app, enhancing user experience and reducing manual planning efforts.
+    \item Implemented Kafka for real-time event-driven architecture across distributed systems.
+    \item Created ephemeral Docker/Kubernetes environments, reducing infrastructure costs by 30\%.
+    \item Migrated services to Java 17 and Spring Boot 3.2.1 for better performance and security.
+    \item Achieved 95\% code coverage using JUnit and enhanced CI/CD pipelines, reducing deployment time by 40\%.
+\end{itemize}
+
+\subsection*{Ford Motor Company – Chennai, Tamil Nadu}
+\textit{Software Engineer} \hfill \textit{Oct 2021 – Oct 2023}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+    \item Transformed legacy mainframe systems into cloud-native, microservice-based architecture, reducing infrastructure costs by 50\%
+    \item Integrated with API Gateway (APIGEE), achieving high conformance scan scores (90\%) and optimizing API performance.
+    \item Automated build and deployment pipelines using Jenkins, reducing manual interventions by 50\%.
+    \item Improved observability and reduced system downtime through modernization.
+\end{itemize}
+\vspace{5\baselineskip}
+\subsection*{Infosys – Mysuru, Karnataka}
+\textit{Software Developer Intern} \hfill \textit{Feb 2021 – May 2021}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+    \item Developed RESTful APIs and integrated backend services with MySQL/PostgreSQL databases.
+    \item Improved API response times by 40\% through Redis caching and query optimization.
+    \item Led backend refactoring efforts, reducing technical debt and improving system stability.
+\end{itemize}
+
+\vspace{2\baselineskip}
+% Education
+\section*{Education}
+\textbf{Bachelor of Technology in Computer Science} \\
+Basaveshwar Engineering College – Bagalkot, Karnataka \hfill \textit{Aug 2017 – Jul 2021} \\
+CGPA: 7.59 / 10.00
+
+\vspace{2\baselineskip}
+% Achievements & Certifications
+\section*{Achievements \& Certifications/Projects}
+\begin{itemize}[leftmargin=0.5cm, noitemsep]
+    \item \textbf{Bravo Zulu Award} at FedEx for optimizing CI/CD pipelines and reducing infrastructure setup time.
+    \item \textbf{Appreciation Certificate} at Ford for transitioning a mainframe application to microservices.
+    \item \textbf{Certified SAFe 6 Practitioner.}
+    \item Led the winning project for \textbf{Smart India Hackathon 2020}, developing an Online Appointment App for the Ministry of AYUSH.
+    \item Anomaly Detection Using Machine Learning – Final Year Project Problem Statement by Amazon.
+\end{itemize}
+
+\end{document}
